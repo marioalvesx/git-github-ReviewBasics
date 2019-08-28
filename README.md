@@ -18,6 +18,12 @@ https://git-scm.com/download
 
 - [x] Colocar projeto na nuvem
 
+- [x] Pegar projeto já iniciado para trabalhar com a equipe
+- [x] Resolver um conflito
+- [x] Antes de enviar resolução, atualizar projeto local
+
+- [x] Voltar arquivo para um determinado momento da linha do tempo
+
 ## Começando Git no seu projeto
 
 #### Iniciar linha do tempo do projeto: 
@@ -91,3 +97,20 @@ https://git-scm.com/download
 * Se é o primeiro 'push' do projeto, deve-se criar o repo. master remoto antes com o comando:
     * `git push -u origin master`
 
+#### Evitar pedido de login e senha a cada push
+
+* `git credential.helper store`
+
+#### Pegar projeto já iniciado para trabalhar 
+
+* `git clone https://github.com/usergithub/nomerepositorio.git`
+
+#### Puxar atualizaçoes do repositorio remoto
+
+* `git pull`
+
+#### Voltar branch para um certo periodo da linha do tempo
+
+* 1# `git log`
+* 2# Copiar código do commit do periodo desejado
+* 3# `git checkout codigodocommit -- nomearquivoparavoltardoperiodo`
